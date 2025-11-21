@@ -8,10 +8,15 @@ require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 3000;
-const allowedOrigins = [process.env.BASE_URL_FRONT];
+// const allowedOrigins = [process.env.BASE_URL_FRONT];
+
+const allowedOrigins = [
+  "https://www.gregory-lacroix-pf.com",
+  "http://localhost:5173",
+];
 
 const corsOptions = {
-  origin: "https://gregorylacroix.go.yn.fr",
+  origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // si tu utilises des cookies ou des sessions

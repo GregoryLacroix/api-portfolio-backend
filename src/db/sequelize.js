@@ -24,8 +24,8 @@ if (process.env.NODE_ENV === "production") {
   );
 } else {
   sequelize = new Sequelize(
-    "apkmtubg_api_backend_portfolio",
-    "apkmtubg_user_api",
+    "api_backend_portfolio",
+    "user_api",
     "Turkish28410!",
     {
       host: "localhost",
