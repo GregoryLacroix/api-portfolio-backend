@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "production") {
   );
 } else {
   sequelize = new Sequelize(
-    "api_backend_portfolio",
+    "portfolio",
     "user_api",
     "Turkish28410!",
     {
